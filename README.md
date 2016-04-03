@@ -33,7 +33,7 @@ require 'cloudsight'
 Cloudsight.oauth_options = {
   consumer_key: 'REPLACE WITH YOUR KEY',
   consumer_secret: 'REPLACE WITH YOUR SECRET'
-}
+}  if Cloudsight.oauth_options.nil?
 ```
 
 or, using a single API key:
